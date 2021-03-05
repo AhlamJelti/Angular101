@@ -1,8 +1,14 @@
 import { Component } from "@angular/core";
+import { Passenger } from '../assets/passengers';
+import { passengers } from '../assets/passengers';
 
 @Component({
-  selector: "app-root",
-  template: `<h1>hello</h1>`,
-  styleUrls: ["./app.component.css"],
+  selector: 'sqli',
+  templateUrl: './app.component.html',
+
 })
-export class AppComponent {}
+
+export class AppComponent {
+  passengers = passengers;
+  constructor() { }
+}
